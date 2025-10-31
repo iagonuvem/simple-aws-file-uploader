@@ -258,5 +258,4 @@ Removes API Gateway, Lambdas, DynamoDB, and S3 resources (must be empty).
 ---
 
 ## 📄 License
-
-GNU
+GPL-3.0 license
