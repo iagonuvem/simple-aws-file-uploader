@@ -1,0 +1,52 @@
+{
+  "name": "simple-aws-file-uploader",
+  "version": "1.0.0",
+  "description": "A simple AWS file upload service using Serverless Framework, S3, DynamoDB, and Lambda metadata extraction.",
+  "type": "module",
+  "main": "src/api/handler.ts",
+  "scripts": {
+    "dev": "serverless offline",
+    "deploy": "serverless deploy",
+    "remove": "serverless remove",
+    "lint": "eslint . --ext .ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "aws",
+    "serverless",
+    "s3",
+    "lambda",
+    "dynamodb",
+    "express",
+    "file-upload",
+    "metadata"
+  ],
+  "author": "Iago Nuvem",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.658.0",
+    "@aws-sdk/client-s3": "^3.658.0",
+    "@aws-sdk/lib-dynamodb": "^3.658.0",
+    "@aws-sdk/s3-request-presigner": "^3.658.0",
+    "express": "^4.19.2",
+    "file-type": "^18.7.0",
+    "image-size": "^1.1.1",
+    "pdf-parse": "^1.1.1",
+    "serverless-http": "^3.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.157",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.8.1",
+    "@types/pdf-parse": "^1.1.5",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "eslint": "^8.57.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "serverless": "^3.39.0",
+    "serverless-offline": "^13.5.0",
+    "serverless-webpack": "^5.13.0",
+    "typescript": "^5.6.3"
+  }
+}
